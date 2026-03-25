@@ -1,0 +1,95 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+function getSlug(id: string) {
+    return id.replace(/\.md$/, '');
+}
+
+const allPosts = await getCollection('blog');
+const latestPosts = allPosts
+    .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+    .slice(0, 3);
+
+function formatDate(date: Date) {
+    return date.toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+    });
+}
+---
+
+<BaseLayout
+    title="Alina — Marketing & Social Media at Piwi.AI"
+    description="Marketing and social media insights for small businesses. AI-powered strategies, content tips, and real-world advice from Alina at Piwi.AI."
+    canonicalUrl="https://aniteialina.com/"
+>
+    <section class="hero">
+        <p class="hero-greeting">Hey there 👋</p>
+        <h1 class="hero-name">
+            <img src="/profile.png" alt="Alina" class="profile-picture-small" />
+            I'm <span class="accent">Alina</span>
+        </h1>
+        <p class="hero-tagline">
+            Marketing & Social Media Specialist at <a href="https://piwi.ai" target="_blank" rel="noreferrer">Piwi.AI</a>
+        </p>
+        <p class="hero-intro">
+            I help small businesses build their online presence with smart content strategies
+            and AI-powered marketing tools. Here I share practical tips, insights, and
+            real-world advice from the trenches of digital marketing.
+        </p>
+        <div class="hero-actions">
+            <a href="/blog" class="btn btn-primary">
+                Read the Blog
+            </a>
+            <a href="/about" class="btn btn-outline">
+                About Me
+            </a>
+        </div>
+    </section>
+
+    <section class="skills">
+        <h2 class="section-title">What I Do</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-icon">📱</div>
+                <h3>Social Media Strategy</h3>
+                <p>Building authentic brand presence across Instagram, LinkedIn, and emerging platforms.</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">✍️</div>
+                <h3>Content Creation</h3>
+                <p>Crafting compelling stories that connect with audiences and drive real engagement.</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">🤖</div>
+                <h3>AI-Powered Marketing</h3>
+                <p>Using AI tools to streamline content workflows and amplify marketing impact.</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">📊</div>
+                <h3>Analytics & Growth</h3>
+                <p>Data-driven decisions to understand what works and scale what matters.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="latest-posts">
+        <h2 class="section-title">Latest Posts</h2>
+        <ul class="post-list">
+            {latestPosts.map((post) => (
+                <li class="post-item">
+                    <span class="post-date">{formatDate(post.data.date)}</span>
+                    <h3>
+                        <a href={`/blog/${getSlug(post.id)}`}>{post.data.title}</a>
+                    </h3>
+                    <p class="post-excerpt">{post.data.excerpt}</p>
+                </li>
+            ))}
+        </ul>
+        <a href="/blog" class="view-all">
+            View all posts &rarr;
+        </a>
+    </section>
+</BaseLayout>
