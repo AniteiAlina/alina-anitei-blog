@@ -1,7 +1,7 @@
 ---
 title: "How I'm Using AI to Plan Piwi's Product Hunt Launch"
 date: 2026-03-25
-excerpt: "Preparing for a Product Hunt launch with a two-person team means every hour counts. Here's how I'm using Claude and Gemini to plan, prepare, and build momentum without burning out before launch day."
+excerpt: "Here's how I'm using Claude and Gemini to plan, prepare, and build momentum for our Product Hunt launch without burning out before launch day."
 tags: ["ai", "product-hunt", "marketing", "launch", "strategy"]
 ---
 
