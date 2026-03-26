@@ -1,11 +1,11 @@
 ---
 title: "Before You Launch on Product Hunt: What to Do Weeks in Advance"
-date: 2026-03-25
+date: 2026-03-26
 excerpt: "Most people create a Product Hunt account the week they launch. That's too late. Here's what I've been doing for 38 days before our launch, and why it matters."
 tags: ["product-hunt", "marketing", "launch", "strategy"]
 ---
 
-I've been on Product Hunt for 38 days straight. Not because I love gamifying streak counters, but because I learned early on that if you show up on launch day as a stranger, the platform will treat you like one.
+I've been on Product Hunt for 39 days straight. Not because I love gamifying streak counters, but because I learned early on that if you show up on launch day as a stranger, the platform will treat you like one.
 
 This is the second post in my Product Hunt launch series. [The first one](/blog/ai-product-hunt-launch) covers how I'm using AI to plan the actual launch. This one is about everything that needs to happen before that, the groundwork that most people skip.
 
@@ -30,7 +30,7 @@ What that looks like in practice:
 - **Leave real comments.** Product Hunt rewards specific, useful comments far more than "great product!" If you have a use case, share it. If you have a question, ask it.
 - **Browse the daily feed.** This takes 5 minutes. You'll start to understand what launches do well, what copy works, what format the top products use.
 
-I have a 38-day streak right now. It's not about the streak itself, it's about what I've learned from 38 days of paying attention to what works.
+I have a 39-day streak right now. It's not about the streak itself, it's about what I've learned from 39 days of paying attention to what works.
 
 ## Follow People in Your Space
 
@@ -123,7 +123,7 @@ That reminder is not annoying. It's necessary.
 
 That's why I started building that list of real contacts weeks before the launch. People who I've had real conversations with are far more likely to actually remember to follow through when I reach out on the day.
 
-That's why I started building 38 days ago. Launch day isn't the start. It's the result.
+That's why I started building 39 days ago. Launch day isn't the start. It's the result.
 
 ---
 
