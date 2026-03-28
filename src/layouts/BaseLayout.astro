@@ -341,28 +341,7 @@ main.container-wide {
     letter-spacing: -0.01em;
 }
 
-/* ===== Hero ===== */
-.hero {
-    padding: 3rem 0 2rem;
-}
-
-.hero-greeting {
-    font-size: 1.05rem;
-    color: var(--accent);
-    font-weight: 500;
-    margin-bottom: 0.5rem;
-    letter-spacing: 0.02em;
-}
-
-.hero-name {
-    font-family: var(--font-display);
-    font-size: 3rem;
-    font-weight: 800;
-    line-height: 1.15;
-    margin-bottom: 0.75rem;
-    letter-spacing: -0.02em;
-}
-
+/* ===== Hero (base accent class kept globally) ===== */
 .accent {
     background: var(--accent-gradient);
     -webkit-background-clip: text;
@@ -370,115 +349,7 @@ main.container-wide {
     background-clip: text;
 }
 
-.hero-tagline {
-    color: var(--text-muted);
-    font-size: 1.15rem;
-    margin-bottom: 1rem;
-}
-
-.hero-intro {
-    font-size: 1.05rem;
-    color: var(--text-muted);
-    max-width: 550px;
-    line-height: 1.7;
-    margin-bottom: 2rem;
-}
-
-.hero-actions {
-    display: flex;
-    gap: 0.75rem;
-    flex-wrap: wrap;
-}
-
-/* ===== Skills Grid ===== */
-.skills {
-    padding: 2rem 0;
-}
-
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-}
-
-.skill-card {
-    background: var(--bg-card);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 1.5rem;
-    transition: border-color var(--transition), transform var(--transition),
-        background var(--transition);
-}
-
-.skill-card:hover {
-    border-color: var(--accent);
-    background: var(--bg-card-hover);
-    transform: translateY(-3px);
-}
-
-.skill-icon {
-    font-size: 1.5rem;
-    margin-bottom: 0.75rem;
-}
-
-.skill-card h3 {
-    font-size: 1rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-}
-
-.skill-card p {
-    color: var(--text-muted);
-    font-size: 0.88rem;
-    line-height: 1.5;
-}
-
-/* ===== Post List ===== */
-.latest-posts {
-    padding: 2rem 0;
-}
-
-.post-list {
-    list-style: none;
-}
-
-.post-item {
-    padding: 1.25rem 0;
-    border-bottom: 1px solid var(--border);
-}
-
-.post-item:last-child {
-    border-bottom: none;
-}
-
-.post-date {
-    display: block;
-    color: var(--text-muted);
-    font-size: 0.82rem;
-    margin-bottom: 0.35rem;
-}
-
-.post-item h3 {
-    font-size: 1.15rem;
-    font-weight: 600;
-    margin-bottom: 0.4rem;
-}
-
-.post-item h3 a {
-    color: var(--text);
-    transition: color var(--transition);
-}
-
-.post-item h3 a:hover {
-    color: var(--accent);
-}
-
-.post-excerpt {
-    color: var(--text-muted);
-    font-size: 0.9rem;
-    line-height: 1.55;
-}
-
+/* ===== View All link ===== */
 .view-all {
     display: inline-block;
     margin-top: 1rem;
